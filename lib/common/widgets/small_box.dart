@@ -5,6 +5,8 @@ class SmallBox extends StatelessWidget {
   final double width;
   final double height;
   final String text;
+  final double borderWidth;
+  final Color borderColor;
   final Color bg;
   final Color textColor;
   final double radius;
@@ -20,6 +22,8 @@ class SmallBox extends StatelessWidget {
     required this.bg,
     required this.textColor,
     required this.radius,
+    this.borderWidth = 0,
+    this.borderColor = Colors.transparent,
     this.isIcon = false,
     this.icon = Icons.arrow_forward_outlined,
   }) : super(key: key);
@@ -31,9 +35,12 @@ class SmallBox extends StatelessWidget {
       width: width,
       height: height,
       decoration: BoxDecoration(
-        color: bg,
-        borderRadius: BorderRadius.circular(radius),
-      ),
+          color: bg,
+          borderRadius: BorderRadius.circular(radius),
+          border: Border.all(
+            width: borderWidth,
+            color: borderColor,
+          )),
       child: isIcon
           ? Icon(
               icon,

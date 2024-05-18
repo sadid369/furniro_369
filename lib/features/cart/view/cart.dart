@@ -23,9 +23,9 @@ class _CartState extends State<Cart> {
             SecondNav(
               pageName: 'Cart',
             ),
-            CartBody()
-            // AssuranceSection(),
-            // Footer(),
+            CartBody(),
+            AssuranceSection(),
+            Footer(),
           ],
         ),
       ),
