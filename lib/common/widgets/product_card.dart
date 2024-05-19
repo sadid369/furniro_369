@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:furniro/common/utils/app_colors.dart';
-import 'package:furniro/common/utils/app_image.dart';
-import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/app_button.dart';
 
 class ProductCard extends StatefulWidget {

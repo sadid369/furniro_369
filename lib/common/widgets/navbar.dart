@@ -64,9 +64,11 @@ class _NavbarState extends State<Navbar> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/');
+                    },
                     child: Text(
-                      'Hello',
+                      'Home',
                       style: TextStyle(
                         fontSize: 16,
                         color: AppColors.heading000000,
@@ -387,7 +389,9 @@ class _NavbarState extends State<Navbar> {
                                                   borderColor:
                                                       AppColors.heading000000,
                                                   radius: 25,
-                                                  onTap: () {},
+                                                  onTap: () {
+                                                    context.go('/checkout');
+                                                  },
                                                 ),
                                                 AppButton(
                                                   width: 90,
