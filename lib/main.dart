@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/features/cart/view/cart.dart';
 import 'package:furniro/features/checkout/view/checkout.dart';
+import 'package:furniro/features/contact/view/contact.dart';
 import 'package:furniro/features/home/view/home.dart';
 import 'package:furniro/features/shop/view/shop.dart';
 import 'package:furniro/features/single_product/view/single_product.dart';
@@ -57,6 +58,12 @@ class MyApp extends StatelessWidget {
               path: 'checkout',
               builder: (context, state) {
                 return Checkout();
+              },
+            ),
+            GoRoute(
+              path: 'contact',
+              builder: (context, state) {
+                return Contact();
               },
             ),
           ],

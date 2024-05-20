@@ -98,7 +98,9 @@ class _NavbarState extends State<Navbar> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/contact');
+                    },
                     child: Text(
                       'Contact',
                       style: TextStyle(
