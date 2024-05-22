@@ -59,7 +59,7 @@ class _NavbarState extends State<Navbar> {
               ),
             ),
             SizedBox(
-              width: 300,
+              width: 400,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -88,9 +88,11 @@ class _NavbarState extends State<Navbar> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/contact');
+                    },
                     child: Text(
-                      'About',
+                      'Contact',
                       style: TextStyle(
                         fontSize: 16,
                         color: AppColors.heading000000,
@@ -99,10 +101,10 @@ class _NavbarState extends State<Navbar> {
                   ),
                   TextButton(
                     onPressed: () {
-                      context.go('/contact');
+                      context.go('/login');
                     },
                     child: Text(
-                      'Contact',
+                      'Login/Signup',
                       style: TextStyle(
                         fontSize: 16,
                         color: AppColors.heading000000,
@@ -117,22 +119,6 @@ class _NavbarState extends State<Navbar> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.person_outline_outlined),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.search_outlined,
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.favorite_outline,
-                    ),
-                  ),
                   Builder(builder: (_) {
                     return IconButton(
                       onPressed: () {
@@ -428,6 +414,26 @@ class _NavbarState extends State<Navbar> {
                       ),
                     );
                   }),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.search_outlined,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.favorite_outline,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.person_outline_outlined),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.logout),
+                  ),
                 ],
               ),
             ),

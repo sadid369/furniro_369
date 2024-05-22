@@ -94,7 +94,7 @@ class _RelatedProductState extends State<RelatedProduct> {
             height: 20,
           ),
           AppButton(
-            bg: Colors.white,
+            bg: Colors.transparent,
             textColor: AppColors.goldenB88E2F,
             borderWidth: 2,
             width: 165,

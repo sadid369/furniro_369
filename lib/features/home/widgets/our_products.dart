@@ -6,6 +6,7 @@ import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/app_button.dart';
 
 import 'package:furniro/common/widgets/product_card.dart';
+import 'package:go_router/go_router.dart';
 
 class OurProducts extends StatefulWidget {
   const OurProducts({Key? key}) : super(key: key);
@@ -113,13 +114,18 @@ class _OurProductsState extends State<OurProducts> {
               ),
               itemBuilder: (context, index) {
                 final data = productData[index];
-                return ProductCard(
-                  imageUrl: data['imageUrl'],
-                  productName: data['productName'],
-                  description: data['description'],
-                  price: data['price'],
-                  beforePrice: data['beforePrice'],
-                  discountAmount: data['discount'],
+                return InkWell(
+                  onTap: () {
+                    context.go('/single-product');
+                  },
+                  child: ProductCard(
+                    imageUrl: data['imageUrl'],
+                    productName: data['productName'],
+                    description: data['description'],
+                    price: data['price'],
+                    beforePrice: data['beforePrice'],
+                    discountAmount: data['discount'],
+                  ),
                 );
               },
             ),
@@ -128,7 +134,7 @@ class _OurProductsState extends State<OurProducts> {
             height: 20,
           ),
           AppButton(
-            bg: Colors.white,
+            bg: Colors.transparent,
             textColor: AppColors.goldenB88E2F,
             borderWidth: 2,
             width: 165,

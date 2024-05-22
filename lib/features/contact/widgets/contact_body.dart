@@ -86,7 +86,7 @@ class _ContactBodyState extends State<ContactBody> {
               ),
               Container(
                 width: 450,
-                height: 400,
+                height: 600,
                 // decoration: BoxDecoration(border: Border.all(color: Colors.black)),
                 child: Column(
                   children: [

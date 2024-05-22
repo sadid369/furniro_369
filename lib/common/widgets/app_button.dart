@@ -52,7 +52,7 @@ class AppButton extends StatelessWidget {
           child: Row(
             mainAxisAlignment: leftLogo == null && rightLogo == null
                 ? MainAxisAlignment.center
-                : MainAxisAlignment.spaceAround,
+                : MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               leftLogo == null

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furniro/common/utils/app_colors.dart';
+import 'package:furniro/features/auth/view/login.dart';
+import 'package:furniro/features/auth/view/sign_up.dart';
 import 'package:furniro/features/cart/view/cart.dart';
 import 'package:furniro/features/checkout/view/checkout.dart';
 import 'package:furniro/features/contact/view/contact.dart';
@@ -64,6 +66,18 @@ class MyApp extends StatelessWidget {
               path: 'contact',
               builder: (context, state) {
                 return Contact();
+              },
+            ),
+            GoRoute(
+              path: 'signup',
+              builder: (context, state) {
+                return SignUp();
+              },
+            ),
+            GoRoute(
+              path: 'login',
+              builder: (context, state) {
+                return Login();
               },
             ),
           ],

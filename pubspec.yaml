@@ -76,6 +76,7 @@ flutter:
     - assets/home_page_image/
     - assets/shop_page_image/
     - assets/single_product_image/
+    - assets/social/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

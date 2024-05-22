@@ -4,9 +4,12 @@ import 'package:furniro/common/utils/app_colors.dart';
 InputDecoration myInputDecoration({
   String? labelText,
   String? hintText,
+  String? helper,
   Widget? suffixIcon,
+  // bool? isPassword,
 }) {
   return InputDecoration(
+    helper: helper == null ? Text('') : Text(helper),
     suffixIcon: suffixIcon,
     hintText: hintText,
     hintStyle: TextStyle(

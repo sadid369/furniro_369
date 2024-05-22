@@ -31,7 +31,7 @@ class _CheckoutBodyState extends State<CheckoutBody> {
         children: [
           Container(
             width: 500,
-            height: 1000,
+            height: 1110,
             // decoration: BoxDecoration(border: Border.all(color: Colors.black)),
             child: Column(
               children: [
